@@ -354,7 +354,7 @@ async def api_submit(r):
     x("insert into results values(?,?,?,?,?)", (uid, t["id"], score, total, int(time.time())))
     return web.json_response(dict(score=score, total=total, res=res))
 
-async def index(r): return web.FileResponse("webapp/index.html")
+async def index(r): return web.FileResponse("WEBAPP/index.html")
 
 async def main():
     global ME
